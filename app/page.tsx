@@ -6,6 +6,17 @@ export default function Home() {
     <div className="min-h-screen text-zinc-900">
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-14">
         <header className="flex flex-col gap-8 rounded-3xl bg-white/80 px-8 py-12 shadow-lg shadow-indigo-100/50 ring-1 ring-white/60 backdrop-blur">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <span className="text-sm font-semibold uppercase tracking-[0.3em] text-zinc-500">
+              SDental Design
+            </span>
+            <Link
+              href="/admin/login"
+              className="rounded-full border border-indigo-200 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-700 transition hover:border-indigo-300 hover:bg-white"
+            >
+              Administrador
+            </Link>
+          </div>
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-indigo-500">
               Agencia creativa
@@ -99,12 +110,6 @@ export default function Home() {
                 Recibirás una actualización por correo apenas revisemos tu solicitud.
               </p>
             </div>
-            <Link
-              href="/admin"
-              className="text-sm font-semibold text-indigo-900 underline decoration-indigo-300 underline-offset-4 transition hover:decoration-indigo-500"
-            >
-              Acceso administrador →
-            </Link>
           </div>
         </section>
 
